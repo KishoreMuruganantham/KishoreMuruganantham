@@ -1,28 +1,71 @@
-![MasteHead](https://repository-images.githubusercontent.com/588181932/e36ec678-7984-4cdd-8e4c-a3932772ff8e)
-<h1 align="center">Hi 👋, I'm Kishore Muruganantham</h1>
-<h3 align="center">Frontend Luminary Embarking on the AI & Data Science Odyssey</h3>
-<img align="right" alt="Coding" width="400" src="https://images.squarespace-cdn.com/content/v1/5769fc401b631bab1addb2ab/1541580611624-TE64QGKRJG8SWAIUS7NS/ke17ZwdGBToddI8pDm48kPoswlzjSVMM-SxOp7CV59BZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI6FXy8c9PWtBlqAVlUS5izpdcIXDZqDYvprRqZ29Pw0o/coding-freak.gif">
+<table>
+<tr>
+<td width="64%">
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=kishoremuruganantham&label=Profile%20views&color=0e75b6&style=flat" alt="kishoremuruganantham" /> </p>
+<h1>Kishore Muruganantham</h1>
 
-- 📫 How to reach me **kishore.muruganantham@gmail.com**
+<p><b>Artificial Intelligence · Data Science · Product Engineering</b></p>
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/kishore m" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="kishore m" height="30" width="40" /></a>
-<a href="https://kaggle.com/kishore muruganatham" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="kishore muruganatham" height="30" width="40" /></a>
-<a href="https://instagram.com/kishoreee.m" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="kishoreee.m" height="30" width="40" /></a>
-<a href="https://www.codechef.com/users/kishorem17" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" alt="kishorem17" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/kishore_m" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="kishore_m" height="30" width="40" /></a>
-<a href="https://www.hackerearth.com/@kishore muruganantham" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg" alt="@kishore muruganantham" height="30" width="40" /></a>
-<a href="https://discord.gg/https://discord.gg/3ZFmpaCK" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="https://discord.gg/3ZFmpaCK" height="30" width="40" /></a>
+<p>Building retrieval systems, LLM agents, and the data infrastructure that keeps them honest.</p>
+
+<p>
+  <a href="https://www.linkedin.com/in/kishore-m-13a7402a7/">LinkedIn</a> •
+  <a href="./Kishore_Muruganantham_Resume.pdf">Résumé</a> •
+  <a href="mailto:kishore.muruganantham@gmail.com">Email</a>
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> </p>
+</td>
+<td width="36%" align="center">
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=kishoremuruganantham&show_icons=true&locale=en&layout=compact" alt="kishoremuruganantham" /></p>
+<img src="https://github-readme-stats.vercel.app/api?username=KishoreMuruganantham&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=79c0ff" width="100%" alt="GitHub stats" />
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=kishoremuruganantham&show_icons=true&locale=en" alt="kishoremuruganantham" /></p>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KishoreMuruganantham&layout=compact&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" width="100%" alt="Top languages" />
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=kishoremuruganantham&" alt="kishoremuruganantham" /></p>
+</td>
+</tr>
+</table>
+
+---
+
+## About
+
+I build AI that survives contact with production — retrieval pipelines, agents, and the data
+layer underneath them. My work sits where research ends and shipping begins.
+
+Currently completing a **B.Tech in Artificial Intelligence & Data Science** at Sri Venkateswara
+College of Engineering, alongside the **BS in Management & Data Science** at IIT Madras.
+
+## Selected work
+
+| Project | Stack |
+|:--|:--|
+| [**Mimir AI**](https://github.com/KishoreMuruganantham/Mimir-AI) — enterprise assistant with a digital-human avatar; multimodal RAG over organisation documents | TypeScript · Python · RAG |
+| [**GeminiStream**](https://github.com/KishoreMuruganantham/GeminiStream-Real-Time-Multimodal-API-Integrator) — real-time text and audio streaming on Gemini 2.0 over WebSockets | Python · WebSockets |
+| [**Deployify**](https://github.com/KishoreMuruganantham/Deployify) — deploy any React repository by pasting its GitHub URL | TypeScript |
+| [**Rights Whiz**](https://github.com/KishoreMuruganantham/Rights-Whiz) — gamified children's-rights platform for legal literacy in India | Dart · Flutter |
+| [**Hotel Management System**](https://github.com/KishoreMuruganantham/Hotel-Management-System) — booking engine with recommendations and an admin console | JavaScript |
+
+## Experience
+
+| Company | Role | Period |
+|:--|:--|:--|
+| **Tiger Analytics** | Data Science Intern | Jan – Mar 2026 |
+| **GAIL (India) Limited** | AI Solution Engineer Intern | Jul – Sep 2025 |
+| **Hexaware Technologies** | SDE Intern — Generative AI R&D | Jul – Sep 2024 |
+
+## Recognition
+
+- 🥇 **1st place**, Smart India Hackathon 2024 — national level
+- **ISTE Best Student Award**, 2025
+- **27th globally**, HackerEarth Shell Optimization Challenge 2025 — among 15,000+ participants
+- **3rd place**, Aurigo Software Hackathon 2025 · **4th place (regional)**, Infosys Global Hackathon 2025
+
+## Stack
+
+- **Languages** — Python, Java, C++, SQL, TypeScript
+- **AI & ML** — RAG, LLMs, NLP, LangChain, CrewAI, Azure OpenAI
+- **Data & infrastructure** — MySQL, FAISS, Pinecone, Firebase, Streamlit, Docker, Kubernetes
+
+---
+
+<p align="center"><sub>Open to interesting problems in applied AI.</sub></p>
