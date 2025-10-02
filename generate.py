@@ -23,19 +23,21 @@ from PIL import Image, ImageEnhance, ImageOps
 
 # ---------------------------------------------------------------- config ----
 USERNAME = "KishoreMuruganantham"
-HEADER = "kishore@muruganantham"
+HEADER = "@KishoreMuruganantham"
 DOB = dt.date(2004, 6, 17)
 ACCOUNT_CREATED = dt.date(2023, 5, 12)
 
-CARD_W, CARD_H = 985, 490
+CARD_W, CARD_H = 985, 550
 ART_X, ART_Y = 15, 30
 PANEL_X = 390
 LINE_H = 20
 FONT_SIZE = 16
-CHAR_W = FONT_SIZE * 0.552          # Consolas advance width
-COLS, ROWS = 39, 23
+CHAR_W = FONT_SIZE * 0.5993         # rendered advance (Consolas + size-adjust 109%)
+COLS, ROWS = 39, 26
 VALUE_COL = 26                      # column where values start
 MAX_LINE = 60                       # keep every line inside the card
+LANG_SHORT = {"Jupyter Notebook": "Jupyter", "TypeScript": "TS",
+              "JavaScript": "JS", "C#": "C#"}
 
 THEMES = {
     "dark": dict(bg="#161b22", text="#c9d1d9", key="#ffa657",
@@ -50,6 +52,7 @@ RAMP = "@%#*+=-:. "
 
 # Non-personal panel content.  Dates/ages are derived, not hard-coded.
 FIELDS = [
+    "__HEADER__",
     ("OS", "Windows 11, Android 14, Linux"),
     ("__UPTIME__", ""),
     ("__MEMBER__", ""),
@@ -60,8 +63,11 @@ FIELDS = [
     ("Lang.Computer", "HTML, CSS, JSON, YAML"),
     ("Lang.Spoken", "English, Tamil, Hindi"),
     "__BLANK__",
-    ("Hobbies", "Hackathons, Open Source"),
+    ("Hobbies", "Hackathons, Competitive Coding, ML"),
     "__BLANK__",
+    "__SECTION__:Notable Awards",
+    ("SIH 2024", "1st Place, Ministry of Education"),
+    ("Kaggle HeatCode", "1st Place"),
     "__BLANK__",
     "__SECTION__:Contact",
     ("Email", "kishore.muruganantham@gmail.com"),
@@ -71,8 +77,7 @@ FIELDS = [
     "__STATS_REPOS__",
     "__STATS_COMMITS__",
     "__STATS_LOC__",
-    "__BLANK__",
-    "__BLANK__",
+    "__STATS_LANG__",
 ]
 
 
@@ -145,7 +150,9 @@ def fetch_stats():
     today = dt.date.today()
     q = ('{ user(login: "%s") { '
          '  repositories(first: 100, ownerAffiliations: OWNER, privacy: PUBLIC) '
-         '  { totalCount nodes { stargazerCount } } '
+         '  { totalCount nodes { stargazerCount '
+         '      languages(first: 6, orderBy: {field: SIZE, direction: DESC}) '
+         '      { edges { size node { name color } } } } } '
          '  contributionsCollection(from: "%s", to: "%s") '
          '  { totalCommitContributions contributionCalendar { totalContributions } } '
          '} }' % (USERNAME, (today - dt.timedelta(days=365)).isoformat() + "T00:00:00Z",
@@ -158,6 +165,19 @@ def fetch_stats():
         "uptime": _split_months(DOB, today),
         "member_since": ACCOUNT_CREATED.strftime("%d %b %Y"),
     }
+
+    # aggregate bytes-per-language across every public repo -> top 3
+    agg = {}
+    for n in repos["nodes"]:
+        for e in (n.get("languages") or {}).get("edges") or []:
+            name = e["node"]["name"]
+            size, color = agg.get(name, (0, e["node"]["color"]))
+            agg[name] = (size + e["size"], color)
+    total = sum(v[0] for v in agg.values()) or 1
+    stats["languages"] = [
+        {"name": k, "pct": round(v[0] / total * 100), "color": v[1]}
+        for k, v in sorted(agg.items(), key=lambda kv: -kv[1][0])[:3]
+    ]
 
     # lifetime totals: walk non-overlapping <= 1yr windows back to account creation
     total_contrib = total_commits = 0
@@ -275,7 +295,27 @@ def ascii_art(img, cols=COLS, rows=ROWS):
             s = min(1.0, (d - tol) / 85.0)   # 0 = faint, 1 = solid
             row.append(RAMP[int(round((1 - s) * (n - 1)))])
         lines.append("".join(row))
-    return lines
+    return _centre(lines, cols)
+
+
+def _centre(lines, cols):
+    """Shift the portrait horizontally so the ink sits in the middle of the
+    panel instead of hugging the left edge."""
+    ink = [x for x in range(cols)
+           if any(len(l) > x and l[x].strip() for l in lines)]
+    if not ink:
+        return lines
+    shift = ((cols - 1) - (min(ink) + max(ink))) // 2
+    if not shift:
+        return lines
+    out = []
+    for l in lines:
+        l = l.ljust(cols)
+        if shift > 0:
+            out.append(" " * shift + l[:cols - shift])
+        else:
+            out.append(l[-shift:] + " " * -shift)
+    return out
 
 
 # --------------------------------------------------------------- panel ------
@@ -301,6 +341,8 @@ def build_rows(s):
     for item in FIELDS:
         if item == "__BLANK__":
             out.append([(". ", "cc")])
+        elif item == "__HEADER__":
+            out.append([(HEADER, None), (dashes(HEADER), None)])
         elif isinstance(item, str) and item.startswith("__SECTION__:"):
             t = "- " + item.split(":", 1)[1]
             out.append([(t, None), (dashes(t), None)])
@@ -336,10 +378,22 @@ def build_rows(s):
                 (f"{s['deletions']/1e6:.1f}M", "dele"), ("--", "dele"),
                 (")", None),
             ])
+        elif item == "__STATS_LANG__":
+            pre = 2 + len("Languages") + 1          # ". Languages:"
+            spans = [(". ", "cc"), ("Languages", "key"), (":", None),
+                     (" " + "." * (VALUE_COL - pre - 2) + " ", "cc")]
+            langs = s.get("languages") or []
+            if not langs:
+                spans.append(("\u2014", "value"))
+            for i, L in enumerate(langs):
+                if i:
+                    spans.append((" | ", "cc"))
+                nm = LANG_SHORT.get(L["name"], L["name"])
+                spans.append((f"{nm} {L['pct']}%", L["color"]))
+            out.append(spans)
         else:
             out.append(field(*item))
 
-    out[0] = [(HEADER, None), (dashes(HEADER), None)]
     assert len(out) == ROWS, f"expected {ROWS} rows, got {len(out)}"
     return out
 
@@ -389,6 +443,9 @@ def render(mode, art, rows):
                 chunk.append(esc)
                 first = False
             elif cls:
+                if cls.startswith("#"):
+                    chunk.append(f'<tspan fill="{cls}">{esc}</tspan>')
+                    continue
                 css = {"add": "addColor", "dele": "delColor"}.get(cls, cls)
                 chunk.append(f'<tspan class="{css}">{esc}</tspan>')
             else:
