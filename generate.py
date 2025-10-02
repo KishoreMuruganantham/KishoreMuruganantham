@@ -27,13 +27,13 @@ HEADER = "@KishoreMuruganantham"
 DOB = dt.date(2004, 6, 17)
 ACCOUNT_CREATED = dt.date(2023, 5, 12)
 
-CARD_W, CARD_H = 985, 550
+CARD_W, CARD_H = 985, 562
 ART_X, ART_Y = 15, 30
 PANEL_X = 390
-LINE_H = 20
+LINE_H = 19
 FONT_SIZE = 16
 CHAR_W = FONT_SIZE * 0.5993         # rendered advance (Consolas + size-adjust 109%)
-COLS, ROWS = 39, 26
+COLS, ROWS = 37, 28
 VALUE_COL = 26                      # column where values start
 MAX_LINE = 60                       # keep every line inside the card
 LANG_SHORT = {"Jupyter Notebook": "Jupyter", "TypeScript": "TS",
@@ -66,8 +66,10 @@ FIELDS = [
     ("Hobbies", "Hackathons, Competitive Coding, ML"),
     "__BLANK__",
     "__SECTION__:Notable Awards",
-    ("SIH 2024", "1st Place, Ministry of Education"),
-    ("Kaggle HeatCode", "1st Place"),
+    ("SIH 2024", "1st Place, National Level"),
+    ("ISTE Best Student", "Winner, 2025"),
+    ("Shell Optimization", "27th of 15,000+ \u00b7 HackerEarth"),
+    ("Also Won", "many on Devfolio, Unstop + more"),
     "__BLANK__",
     "__SECTION__:Contact",
     ("Email", "kishore.muruganantham@gmail.com"),
@@ -231,14 +233,31 @@ def avatar_image():
 
 
 # ------------------------------------------------------------------ art -----
-def _aspect_crop(im, aspect):
-    """Centre-crop so the box matches the panel's visual aspect."""
-    w, h = im.size
-    if w / h > aspect:
-        nw, nh = int(round(h * aspect)), h
-        return im.crop(((w - nw) // 2, 0, (w - nw) // 2 + nw, nh))
-    nw, nh = w, int(round(w / aspect))
-    return im.crop((0, (h - nh) // 2, nw, (h - nh) // 2 + nh))
+def _subject_centre(sp, x0, x1, y0, y1, bg, tol, min_run=6):
+    """Median centre of the solid (non-wall) runs in the crop box.
+
+    His head sits left of the loose box's centre, so centring the crop on the
+    box would slice hair off one side.  Isolated specks are ignored by only
+    counting runs of at least `min_run` pixels.
+    """
+    centres = []
+    for y in range(y0, y1):
+        s = None
+        for x in range(x0, x1):
+            on = abs(sp[x, y] - bg) > tol
+            if on:
+                if s is None:
+                    s = x
+            elif s is not None:
+                if x - s >= min_run:
+                    centres.append((s + x - 1) // 2)
+                s = None
+        if s is not None and x1 - s >= min_run:
+            centres.append((s + x1 - 1) // 2)
+    if not centres:
+        return (x0 + x1) // 2
+    centres.sort()
+    return centres[len(centres) // 2]
 
 
 def ascii_art(img, cols=COLS, rows=ROWS):
@@ -278,7 +297,11 @@ def ascii_art(img, cols=COLS, rows=ROWS):
         y1 = h
         y0 = max(0, y1 - box_h)
 
-    im = _aspect_crop(img.crop((x0, y0, x1, y1)), aspect)
+    # crop to the panel's aspect, centred on the subject rather than the box
+    cw = min(int(round(box_h * aspect)), x1 - x0)
+    cx = _subject_centre(sp, x0, x1, y0, y1, bg, tol)
+    left = max(x0, min(int(round(cx - cw / 2.0)), x1 - cw))
+    im = img.crop((left, y0, left + cw, y1))
     g = ImageEnhance.Contrast(im.convert("L")).enhance(1.15)
     g = g.resize((cols, rows), Image.LANCZOS)
     px = g.load()

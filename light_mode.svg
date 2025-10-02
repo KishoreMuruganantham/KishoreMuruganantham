@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="550px" font-size="16px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="562px" font-size="16px">
 <style>
 @font-face {src: local('Consolas'), local('Consolas Bold');font-family: 'ConsolasFallback';font-display: swap;-webkit-size-adjust: 109%;size-adjust: 109%;}
 .key {fill: #953800;}
@@ -9,61 +9,65 @@
 .cc {fill: #c2cfde;}
 text, tspan {white-space: pre;}
 </style>
-<rect width="985px" height="550px" fill="#f6f8fa" rx="15"/>
+<rect width="985px" height="562px" fill="#f6f8fa" rx="15"/>
 <text x="15" y="30" fill="#24292f" class="ascii">
-<tspan x="15" y="30">            .:-=======:.</tspan>
-<tspan x="15" y="50">       .:+++***+*#*+++++==-.</tspan>
-<tspan x="15" y="70">    -+++**+++###+**+**+++***++=.</tspan>
-<tspan x="15" y="90">  -=++++**+*#*#%%%++**+*#***+++*+:</tspan>
-<tspan x="15" y="110">  +*##%%%%%@##%##****##%%###**++**-</tspan>
-<tspan x="15" y="130">  +%%#%%##@@%@@%##%%%%%%%%##***#**-</tspan>
-<tspan x="15" y="150">  *%#**#%%@@%%%@@@@@@@@@#%%*#%%%#*+</tspan>
-<tspan x="15" y="170">  *####+-=+++===++-....:==*#%%@@@**:</tspan>
-<tspan x="15" y="190">  ###%:.--=+=++---+++=---.  =%%%%%*-</tspan>
-<tspan x="15" y="210">  ##- .=++*##**#**#*+++**+=- .+###*+</tspan>
-<tspan x="15" y="230">  ##: .-+**#############*+=-  =####-</tspan>
-<tspan x="15" y="250">  #=  -++***##%%%%%%###*++--:. *##*</tspan>
-<tspan x="15" y="270">  #.:-.     ..  .-=. .:      :=:%#</tspan>
-<tspan x="15" y="290">  *. :     -. -     .: -      .:=  .</tspan>
-<tspan x="15" y="310">    + :-       .::+:     : :+-  -:</tspan>
-<tspan x="15" y="330">    =+:*#*++=+* .@@= ===++##*::  -</tspan>
-<tspan x="15" y="350">  .:.*++*++==-:=@@@@- -=++*#+=  :.</tspan>
-<tspan x="15" y="370">  =+ =+***=-.:+-+#%*+*--=+##*+ :-</tspan>
-<tspan x="15" y="390">   .  =====. . ..    .::-*#**-</tspan>
-<tspan x="15" y="410">      :--- .     . ..  ..=+++ .</tspan>
-<tspan x="15" y="430">      :  ...=====--=++=:.-:  :</tspan>
-<tspan x="15" y="450">       ==   -**+   =*#*-  :+:</tspan>
-<tspan x="15" y="470">         ++.  .::..-=.  +*= :.</tspan>
-<tspan x="15" y="490">       :- =##+==--:--***=  -=  *</tspan>
-<tspan x="15" y="510">     --.--. .=*#%%#*+-   :-=- *@*</tspan>
-<tspan x="15" y="530">   .%:  -====:     .:------. -@@@  -.</tspan>
+<tspan x="15" y="30">             .:-=======:.</tspan>
+<tspan x="15" y="49">         -+++***+*#*+++++=-:</tspan>
+<tspan x="15" y="68">     -+++**++*##*+**+*++++**++=-.</tspan>
+<tspan x="15" y="87">   -+++=+*++**#%@%#++#+=+#***+++*+.</tspan>
+<tspan x="15" y="106">  *+***##%##%**###*+****#%#***++++*-</tspan>
+<tspan x="15" y="125"> ++*%%%@%##@%%@%#**%%%%%%%%###*****=</tspan>
+<tspan x="15" y="144">**+*%*#*##%%%%%%%%%%%%@@%#%%**##%##+</tspan>
+<tspan x="15" y="163">*###%#*%%%%@%%%%%%%%%%%####%##%%@%**:</tspan>
+<tspan x="15" y="182">=####%%=                  .-+#%@@@%*+</tspan>
+<tspan x="15" y="201">%%###*= =++#####*+***+++++=.  *##%%*+</tspan>
+<tspan x="15" y="220">####+. -+++********#**+***+=-. =##***</tspan>
+<tspan x="15" y="239">+###=  :=*####%###%%%%###*+=-. -####+</tspan>
+<tspan x="15" y="258">.##*  :=++++*###%%%%##**+++--:. =##*</tspan>
+<tspan x="15" y="277"> *%+ --      :.  :--  :-      .= %#.</tspan>
+<tspan x="15" y="296">  ++  -    .- :-     .: -       :+: .</tspan>
+<tspan x="15" y="315"> -.:.- =.   .    :-.-   . : :==  .-</tspan>
+<tspan x="15" y="334">:-  :+:=#*==-:+* :@@. +:--=*#*::  -</tspan>
+<tspan x="15" y="353"> - ..=+=******+.:@@%% .+***##*-:  -</tspan>
+<tspan x="15" y="372">  -+.:***+=-. .*#@@@@%=..-=*#**  +</tspan>
+<tspan x="15" y="391">   -. ==+**+::=       =++*#%#*=</tspan>
+<tspan x="15" y="410">      .==--               +***.:</tspan>
+<tspan x="15" y="429">       .::-    :-====-.   ===::</tspan>
+<tspan x="15" y="448">       =   :-**+-. .=+*#+-:  =</tspan>
+<tspan x="15" y="467">        -=   -+*+. :+**=  .=+ .</tspan>
+<tspan x="15" y="486">        . *+.    .  ..  :**: -..</tspan>
+<tspan x="15" y="505">       .-- =#%*++++-++##*- .-=  @</tspan>
+<tspan x="15" y="524">     .=..=-.  =*#%#**-.  .:-=- *@@</tspan>
+<tspan x="15" y="543">    +# . +===-:.    .-=---=-. :@@@  =</tspan>
 </text>
 <text x="390" y="30" fill="#24292f">
 <tspan x="390" y="30">@KishoreMuruganantham-———————————————————————————————————-—-</tspan>
-<tspan x="390" y="50">. <tspan class="key">OS</tspan>:<tspan class="cc"> ................... </tspan><tspan class="value">Windows 11, Android 14, Linux</tspan></tspan>
-<tspan x="390" y="70">. <tspan class="key">Uptime</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">22 years, 3 months, 15 days</tspan></tspan>
-<tspan x="390" y="90">. <tspan class="key">Member Since</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">12 May 2023</tspan></tspan>
-<tspan x="390" y="110">. <tspan class="key">Shell</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">PowerShell, Bash</tspan></tspan>
-<tspan x="390" y="130">. <tspan class="key">IDE</tspan>:<tspan class="cc"> .................. </tspan><tspan class="value">IntelliJ IDEA, VS Code</tspan></tspan>
-<tspan x="390" y="150">. </tspan>
-<tspan x="390" y="170">. <tspan class="key">Lang.Programming</tspan>:<tspan class="cc"> ..... </tspan><tspan class="value">Python, Java, C++, SQL, TypeScript</tspan></tspan>
-<tspan x="390" y="190">. <tspan class="key">Lang.Computer</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">HTML, CSS, JSON, YAML</tspan></tspan>
-<tspan x="390" y="210">. <tspan class="key">Lang.Spoken</tspan>:<tspan class="cc"> .......... </tspan><tspan class="value">English, Tamil, Hindi</tspan></tspan>
-<tspan x="390" y="230">. </tspan>
-<tspan x="390" y="250">. <tspan class="key">Hobbies</tspan>:<tspan class="cc"> .............. </tspan><tspan class="value">Hackathons, Competitive Coding, ML</tspan></tspan>
-<tspan x="390" y="270">. </tspan>
-<tspan x="390" y="290">- Notable Awards-————————————————————————————————————————-—-</tspan>
-<tspan x="390" y="310">. <tspan class="key">SIH 2024</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">1st Place, Ministry of Education</tspan></tspan>
-<tspan x="390" y="330">. <tspan class="key">Kaggle HeatCode</tspan>:<tspan class="cc"> ...... </tspan><tspan class="value">1st Place</tspan></tspan>
-<tspan x="390" y="350">. </tspan>
-<tspan x="390" y="370">- Contact-———————————————————————————————————————————————-—-</tspan>
-<tspan x="390" y="390">. <tspan class="key">Email</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">kishore.muruganantham@gmail.com</tspan></tspan>
-<tspan x="390" y="410">. <tspan class="key">LinkedIn</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">kishore-m-13a7402a7</tspan></tspan>
-<tspan x="390" y="430">. </tspan>
-<tspan x="390" y="450">- GitHub Stats-——————————————————————————————————————————-—-</tspan>
-<tspan x="390" y="470">. <tspan class="key">Repos</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">46</tspan><tspan class="cc"> | </tspan><tspan class="key">Stars</tspan>:<tspan class="cc"> </tspan><tspan class="value">18</tspan> | <tspan class="key">Followers</tspan>:<tspan class="cc"> </tspan><tspan class="value">13</tspan></tspan>
-<tspan x="390" y="490">. <tspan class="key">Commits</tspan>:<tspan class="cc"> .............. </tspan><tspan class="value">226</tspan> | <tspan class="key">Contributions</tspan>:<tspan class="cc"> </tspan><tspan class="value">1,193</tspan></tspan>
-<tspan x="390" y="510">. <tspan class="key">Lines of Code</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">1,654,504</tspan> (<tspan class="addColor">11.8M</tspan><tspan class="addColor">++</tspan>, <tspan class="delColor">10.1M</tspan><tspan class="delColor">--</tspan>)</tspan>
-<tspan x="390" y="530">. <tspan class="key">Languages</tspan>:<tspan class="cc"> ............ </tspan><tspan fill="#DA5B0B">Jupyter 76%</tspan><tspan class="cc"> | </tspan><tspan fill="#41b883">Vue 10%</tspan><tspan class="cc"> | </tspan><tspan fill="#3178c6">TS 4%</tspan></tspan>
+<tspan x="390" y="49">. <tspan class="key">OS</tspan>:<tspan class="cc"> ................... </tspan><tspan class="value">Windows 11, Android 14, Linux</tspan></tspan>
+<tspan x="390" y="68">. <tspan class="key">Uptime</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">22 years, 3 months, 15 days</tspan></tspan>
+<tspan x="390" y="87">. <tspan class="key">Member Since</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">12 May 2023</tspan></tspan>
+<tspan x="390" y="106">. <tspan class="key">Shell</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">PowerShell, Bash</tspan></tspan>
+<tspan x="390" y="125">. <tspan class="key">IDE</tspan>:<tspan class="cc"> .................. </tspan><tspan class="value">IntelliJ IDEA, VS Code</tspan></tspan>
+<tspan x="390" y="144">. </tspan>
+<tspan x="390" y="163">. <tspan class="key">Lang.Programming</tspan>:<tspan class="cc"> ..... </tspan><tspan class="value">Python, Java, C++, SQL, TypeScript</tspan></tspan>
+<tspan x="390" y="182">. <tspan class="key">Lang.Computer</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">HTML, CSS, JSON, YAML</tspan></tspan>
+<tspan x="390" y="201">. <tspan class="key">Lang.Spoken</tspan>:<tspan class="cc"> .......... </tspan><tspan class="value">English, Tamil, Hindi</tspan></tspan>
+<tspan x="390" y="220">. </tspan>
+<tspan x="390" y="239">. <tspan class="key">Hobbies</tspan>:<tspan class="cc"> .............. </tspan><tspan class="value">Hackathons, Competitive Coding, ML</tspan></tspan>
+<tspan x="390" y="258">. </tspan>
+<tspan x="390" y="277">- Notable Awards-————————————————————————————————————————-—-</tspan>
+<tspan x="390" y="296">. <tspan class="key">SIH 2024</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">1st Place, National Level</tspan></tspan>
+<tspan x="390" y="315">. <tspan class="key">ISTE Best Student</tspan>:<tspan class="cc"> .... </tspan><tspan class="value">Winner, 2025</tspan></tspan>
+<tspan x="390" y="334">. <tspan class="key">Shell Optimization</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">27th of 15,000+ · HackerEarth</tspan></tspan>
+<tspan x="390" y="353">. <tspan class="key">Also Won</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">many on Devfolio, Unstop + more</tspan></tspan>
+<tspan x="390" y="372">. </tspan>
+<tspan x="390" y="391">- Contact-———————————————————————————————————————————————-—-</tspan>
+<tspan x="390" y="410">. <tspan class="key">Email</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">kishore.muruganantham@gmail.com</tspan></tspan>
+<tspan x="390" y="429">. <tspan class="key">LinkedIn</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">kishore-m-13a7402a7</tspan></tspan>
+<tspan x="390" y="448">. </tspan>
+<tspan x="390" y="467">- GitHub Stats-——————————————————————————————————————————-—-</tspan>
+<tspan x="390" y="486">. <tspan class="key">Repos</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">46</tspan><tspan class="cc"> | </tspan><tspan class="key">Stars</tspan>:<tspan class="cc"> </tspan><tspan class="value">18</tspan> | <tspan class="key">Followers</tspan>:<tspan class="cc"> </tspan><tspan class="value">13</tspan></tspan>
+<tspan x="390" y="505">. <tspan class="key">Commits</tspan>:<tspan class="cc"> .............. </tspan><tspan class="value">226</tspan> | <tspan class="key">Contributions</tspan>:<tspan class="cc"> </tspan><tspan class="value">1,193</tspan></tspan>
+<tspan x="390" y="524">. <tspan class="key">Lines of Code</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">1,654,504</tspan> (<tspan class="addColor">11.8M</tspan><tspan class="addColor">++</tspan>, <tspan class="delColor">10.1M</tspan><tspan class="delColor">--</tspan>)</tspan>
+<tspan x="390" y="543">. <tspan class="key">Languages</tspan>:<tspan class="cc"> ............ </tspan><tspan fill="#DA5B0B">Jupyter 76%</tspan><tspan class="cc"> | </tspan><tspan fill="#41b883">Vue 10%</tspan><tspan class="cc"> | </tspan><tspan fill="#3178c6">TS 4%</tspan></tspan>
 </text>
 </svg>
